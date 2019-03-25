@@ -45,7 +45,7 @@ function init() {
 
       document.getElementById("comment").addEventListener("keyup", updateCount);
 }
-
+//this numbers the stars 
 function lightStars(e) {
       var starNumber = e.target.alt;
       var stars = document.querySelectorAll("span#stars img");
@@ -77,7 +77,7 @@ function updateCount() {
       var charCount = countCharacters(commentText);
       var wordCountBox = document.getElementById("wordCount");
       wordCountBox.value = charCount + "/1000";
-
+      //over 1000 words makes a specific part red  and if not over 1000 its going to be white 
       if (charCount > 1000) {
             wordCountBox.style.color = "white";
             wordCountBox.style.backgroundColor = "red";
